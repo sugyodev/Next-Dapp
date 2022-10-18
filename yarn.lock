@@ -1318,6 +1318,11 @@
   "resolved" "https://registry.npmjs.org/normalize-range/-/normalize-range-0.1.2.tgz"
   "version" "0.1.2"
 
+"nouislider@^15.6.1":
+  "integrity" "sha512-1T5AfeEMGrGM87UJ+qAHvauPfCe/woOjYV/o29fp21+XgGuGpkM1Udo7mPHnidu4+cxlj35rDBWKiA6Mefemrg=="
+  "resolved" "https://registry.npmjs.org/nouislider/-/nouislider-15.6.1.tgz"
+  "version" "15.6.1"
+
 "object-assign@^4.1.1":
   "integrity" "sha512-rJgTQnkUnH1sFw8yT6VSU3zD3sWmu6sZhIseY8VX+GRu3P6F7Fu+JNDoXfklElbLJSnc3FUQHVe4cU5hj+BcUg=="
   "resolved" "https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz"
@@ -1566,6 +1571,11 @@
   "integrity" "sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ=="
   "resolved" "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
   "version" "16.13.1"
+
+"react-semantic-ui-range@^0.7.1":
+  "integrity" "sha512-6AQLuFeARHcIO7yl4Pd0BBIB9sJyeNK1mku7luK6aTXrj9EGaqr1fWS7w4b0+GUP7CvkixmcyYqykxzpKS4Lcw=="
+  "resolved" "https://registry.npmjs.org/react-semantic-ui-range/-/react-semantic-ui-range-0.7.1.tgz"
+  "version" "0.7.1"
 
 "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^17.0.2 || ^18.0.0-0", "react@^18.2.0", "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", "react@18.2.0":
   "integrity" "sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ=="

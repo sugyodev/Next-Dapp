@@ -108,44 +108,6 @@
   margin-left: 0.5rem;
 }
 
-.text {
-  top: 313px;
-  left: 169px;
-  width: 638px;
-  height: 174px;
-  position: absolute;
-  /* UI Properties */
-  color: var(--unnamed-color-ffffff);
-  text-align: left;
-  font: normal normal normal 81px/77px Bebas Neue;
-  letter-spacing: 1.62px;
-  color: #FFFFFF;
-  opacity: 1;
-}
-
-.details_btn {
-  top: 559px;
-  left: 169px;
-  position: absolute;
-}
-
-.games_btn {
-  top: 641px;
-  left: 169px;
-  width: 305px;
-  height: 61px;
-  /* background: var(--unnamed-color-d5fd02) 0% 0% no-repeat padding-box; */
-  /* background: #D5FD02 0% 0% no-repeat padding-box; */
-  opacity: 1;
-  position: absolute;
-}
-
-.board {
-  position: absolute;
-  left: 131px;
-  top: 297px;
-}
-
 @media (max-width: 600px) {
   .grid {
     width: 100%;

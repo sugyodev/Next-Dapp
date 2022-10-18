@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { useState } from 'react';
-// import { navLinks } from "../config/navbar.config";
+import Image from 'next/image'
 
 export default function Navbar() {
   const [active, setActive] = useState(false);
@@ -9,39 +9,16 @@ export default function Navbar() {
   };
   return (
     <>
-      <nav className='flex items-center flex-wrap bg-green-400 p-3 ' style={{ backgroundImage: '' }}>
-        <Link href='/'>
-          <a className='inline-flex items-center p-2 mr-4 '>
-            <svg
-              viewBox='0 0 24 24'
-              xmlns='http://www.w3.org/2000/svg'
-              className='fill-current text-white h-8 w-8 mr-2'
-            >
-              <path d='M12.001 4.8c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624C13.666 10.618 15.027 12 18.001 12c3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C16.337 6.182 14.976 4.8 12.001 4.8zm-6 7.2c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624 1.177 1.194 2.538 2.576 5.512 2.576 3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C10.337 13.382 8.976 12 6.001 12z' />
-            </svg>
-            <span className='text-xl text-white font-bold uppercase tracking-wide'>
-              Talwind CSS
-            </span>
-          </a>
-        </Link>
+      <nav className="flex items-center flex-wrap">
         <button
-          className=' inline-flex p-3 hover:bg-green-600 rounded lg:hidden text-white ml-auto hover:text-white outline-none'
+          className='mt-[16px] ml-[31px] cursor-pointer inline-flex pl-[3px] cursor-pointer hover:bg-[#d5fd02] rounded bg-[#111112] rounded-[37px] text-white hover:text-white outline-none'
+          onClick={handleClick}
         >
-          <svg
-            className='w-6 h-6'
-            fill='none'
-            stroke='currentColor'
-            viewBox='0 0 24 24'
-            xmlns='http://www.w3.org/2000/svg'
-          >
-            <path
-              strokeLinecap='round'
-              strokeLinejoin='round'
-              strokeWidth={2}
-              d='M4 6h16M4 12h16M4 18h16'
-            />
-          </svg>
+          <Image src="/burgur.png" width="74px" height="76px" className="ml-2"/>
         </button>
+        <div class="ml-[60px] mt-[20px]">
+          <Image src="/logo_text.png" width="194px" height="24px" />
+        </div>
         {/*Note that in this div we will use a ternary operator to decide whether or not to display the content of the div  */}
         <div
           className={`${active ? '' : 'hidden'
@@ -49,25 +26,31 @@ export default function Navbar() {
         >
           <div className='lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto'>
             <Link href='/'>
-              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white '>
-                Home
+              <a className='lg:inline-flex lg:w-auto w-full p-9 rounded text-white items-center justify-center hover:text-[#d5fd02] '>
+                HOME
               </a>
             </Link>
             <Link href='/'>
-              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white'>
-                Services
+              <a className='lg:inline-flex lg:w-auto w-full p-9 rounded text-white items-center justify-center hover:text-[#d5fd02]'>
+                ESPORTS
               </a>
             </Link>
             <Link href='/'>
-              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white'>
-                About us
+              <a className='lg:inline-flex lg:w-auto w-full p-9 rounded text-white items-center justify-center hover:text-[#d5fd02]'>
+                NFT HUB
               </a>
             </Link>
             <Link href='/'>
-              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white'>
-                Contact us
+              <a className='lg:inline-flex lg:w-auto w-full p-9 rounded text-white items-center justify-center hover:text-[#d5fd02]'>
+                MY PROFILE
               </a>
             </Link>
+            <div className='bg-[#d5fd02] p-9 cursor-pointer hover:opacity-80'>
+              <svg className="fill-current h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <path
+                  d="M12.9 14.32a8 8 0 1 1 1.41-1.41l5.35 5.33-1.42 1.42-5.33-5.34zM8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12z" />
+              </svg>
+            </div>
           </div>
         </div>
       </nav>
